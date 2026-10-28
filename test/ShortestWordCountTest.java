@@ -1,14 +1,14 @@
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-    public class MorningTask1Test {
+    public class ShortestWordCountTest {
 
         @Test
         public void testThatTheShortestWordIsLetter_i(){
             String sentence = "Hi, i am kenny";
 
             String expected = "i";
-            String actual = MorningTask1.shortestWordCount(sentence);
+            String actual = ShortestWordCount.shortestWordCount(sentence);
 
             assertEquals(expected, actual);
         }
@@ -17,7 +17,7 @@ import static org.junit.Assert.assertEquals;
         public void testThatTheShortestWordIsLetter_of(){
             String sentence = "one of them";
             String expected = "of";
-            String actual = MorningTask1.shortestWordCount(sentence);
+            String actual = ShortestWordCount.shortestWordCount(sentence);
             assertEquals(expected, actual);
         }
 
@@ -26,7 +26,7 @@ import static org.junit.Assert.assertEquals;
         public void testThatTheShortestWordIsLetter_to(){
             String sentence = "Always to win";
             String expected = "to";
-            String actual = MorningTask1.shortestWordCount(sentence);
+            String actual = ShortestWordCount.shortestWordCount(sentence);
             assertEquals(expected, actual);
         }
     }

@@ -1,4 +1,4 @@
-public class MorningTask1 {
+public class ShortestWordCount {
 
     public static String shortestWordCount(String sentence) {
         String[] words = sentence.trim().split("\\s+");

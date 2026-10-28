@@ -1,5 +1,5 @@
 
-public class MorningTask2 {
+public class IncreasingOderArray {
     public static int[] squaresOfIncreasingOderArray(int[] array) {
 
         for (int countOne = 0; countOne < array.length; countOne++) {
