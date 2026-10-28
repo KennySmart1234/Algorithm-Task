@@ -20,5 +20,14 @@ import static org.junit.Assert.assertEquals;
             String actual = MorningTask1.shortestWordCount(sentence);
             assertEquals(expected, actual);
         }
+
+
+        @Test
+        public void testThatTheShortestWordIsLetter_to(){
+            String sentence = "Always to win";
+            String expected = "to";
+            String actual = MorningTask1.shortestWordCount(sentence);
+            assertEquals(expected, actual);
+        }
     }
 
