@@ -60,6 +60,18 @@ public class EmailAndPasswordValidatorTest {
         String password = "Pass123d#Kenny";
         assertTrue(EmailAndPasswordValidation.validatePassword(password));
     }
+
+    @Test
+    public void testThatThePasswordReturnsFalse(){
+        String password = "Java code@1";
+        assertFalse(EmailAndPasswordValidation.validatePassword(password));
+    }
+
+    @Test
+    public void testThatThePasswordReturnsFalseForWeakPassword(){
+        String password = "Welcome 123$";
+        assertFalse(EmailAndPasswordValidation.validatePassword(password));
+    }
 }
 
 
